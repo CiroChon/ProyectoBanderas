@@ -19,18 +19,24 @@ public class BanderaAlemania{
 			 }
 		 }
 
-
+		for(int i=8; i<=17; i++){
+			for(int j=0; j<matriz[0].length; j++){
+				matriz[i][j] = 'A';
+			}
+		}
 
 
 		 for (int i=0;i<matriz.length ;i++ ) {
 
 		 	for (int j=0;j<matriz[0].length ;j++ ) {
-		 		if(matriz[i][j]=='N')
-		 		{
+		 		if(matriz[i][j]=='N'){
 		 			System.out.print(ConsoleColors.BLACK_BACKGROUND+"   ");
 				 }
 				if(matriz[i][j]=='R'){
 					System.out.print(ConsoleColors.RED_BACKGROUND+"    ");
+				}
+				if(matriz[i][j] == 'A'){
+					System.out.print(ConsoleColors.YELLOW_BACKGROUND+"     ");
 				}
 		 		System.out.print(ConsoleColors.RESET);
 		 	}
