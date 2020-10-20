@@ -1,45 +1,25 @@
 public class Banderas{
 	public static void main(String[] args) {
-		
-		char matriz[][];
-		matriz = new char[18][27];
-			//i filas
-			//j columunas
-		 for (int i= 0; i<6; i++ ) {
-		 	for (int j=0; j<matriz[0].length; j++) {
-		 		matriz[i][j] = 'N';
-		 	}
-		 }
-		 
-		 for(int i=6; i<12; i++) {
-			 for(int j=0; j<matriz[0].length; j++){
-				 matriz[i][j] = 'R';
-			 }
-		 }
-
-		for(int i=12; i<18; i++){
-			for(int j=0; j<matriz[0].length; j++){
-				matriz[i][j] = 'A';
+		String[] archivox = ConsoleFile.read("info_banderas.csv");
+		for(int n=1 ; n<20; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
 			}
+			System.out.println();
 		}
-
-
-		 for (int i=0;i<matriz.length ;i++ ) {
-		 	for (int j=0;j<matriz[0].length ;j++ ) {
-		 		if(matriz[i][j]=='N'){
-		 			System.out.print(ConsoleColors.BLACK_BACKGROUND+"   ");
-				 }
-				if(matriz[i][j]=='R'){
-					System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
-				}
-				if(matriz[i][j] == 'A'){
-					System.out.print(ConsoleColors.YELLOW_BACKGROUND+"   ");
-				}
-		 		System.out.print(ConsoleColors.RESET);
-		 	}
-		 	System.out.println();
-		 }
-
-
 	}
 }
