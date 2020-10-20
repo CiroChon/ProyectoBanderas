@@ -157,6 +157,85 @@ public class Banderas{
 			}
 		System.out.println();
 		}
+		//Isla De Pascua
+		for(int n=161 ; n<181; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Rumania
+		for(int n=181 ; n<201; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "4":
+						System.out.print(ConsoleColors.YELLOW_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Alemania
+		for(int n=201 ; n<221; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "8":
+						System.out.print(ConsoleColors.BLACK_BACKGROUND+"   ");
+						break;
+					case "4":
+						System.out.print(ConsoleColors.YELLOW_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Japon
+		for(int n=221 ; n<241; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+
 
 
 
