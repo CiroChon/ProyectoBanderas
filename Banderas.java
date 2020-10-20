@@ -355,6 +355,69 @@ public class Banderas{
 			}
 		System.out.println();
 		}	
+		//Republica Checa
+		for(int n=341 ; n<361; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+		//Libano
+		for(int n=361 ; n<381; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+		//Escocia
+		for(int n=381 ; n<401; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+
+
+
 
 
 
