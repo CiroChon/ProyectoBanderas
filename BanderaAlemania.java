@@ -5,7 +5,7 @@ public class BanderaAlemania{
 		matriz = new char[18][27];
 			//i filas
 			//j columunas
-		 for (int i= 0; i<=6; i++ ) {
+		 for (int i= 0; i<=5; i++ ) {
 
 		 	for (int j=0; j<matriz[0].length; j++) {
 		 		matriz[i][j] = 'N';
@@ -13,13 +13,13 @@ public class BanderaAlemania{
 		 	}
 		 }
 		 
-		 for(int i=7; i<=12; i++) {
+		 for(int i=6; i<=11; i++) {
 			 for(int j=0; j<matriz[0].length; j++){
 				 matriz[i][j] = 'R';
 			 }
 		 }
 
-		for(int i=8; i<=17; i++){
+		for(int i=12; i<=17; i++){
 			for(int j=0; j<matriz[0].length; j++){
 				matriz[i][j] = 'A';
 			}
