@@ -415,108 +415,156 @@ public class Banderas{
 			}
 		System.out.println();
 		}	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		//Cuba
+		for(int n=401 ; n<421; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+		//Rusia
+		for(int n=421 ; n<441; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+		//Sri Lanka
+		for(int n=441 ; n<461; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "4":
+						System.out.print(ConsoleColors.YELLOW_BACKGROUND+"   ");
+						break;
+					case "5":
+						System.out.print(ConsoleColors.GREEN_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}	
+		//Cambia
+		for(int n=461 ; n<481; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "5":
+						System.out.print(ConsoleColors.GREEN_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Chile
+		for(int n=481 ; n<501; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Paises Bajos
+		for(int n=501 ; n<521; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+		//Corea del Norte
+		for(int n=521 ; n<541; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
 
 	}
 }
