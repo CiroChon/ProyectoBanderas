@@ -21,9 +21,9 @@ public class Juego {
         for (int i=0; i<letras.length; i++){
             if(letras[i]==letraIntro){
                 guion[i]=letraIntro;
-            }
+            } 
         }
-        
+        System.out.println(guion);
 
 
 
