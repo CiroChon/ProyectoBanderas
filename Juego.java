@@ -1,4 +1,5 @@
 import java.util.Scanner; 
+import java.util.Arrays;
 
 public class Juego {
     public static void main (String[] args){
@@ -6,25 +7,31 @@ public class Juego {
         int posAleatoria = (int) Math.floor(Math.random() * capitales.length); 
         String capital = capitales[posAleatoria];
 
-        System.out.println(capital);
         char [] letras = capital.toCharArray();
         char [] guion = new char[letras.length];
 
         for (int i=0; i<letras.length; i++){
             guion[i]= '-';
         }
-        System.out.println("Cual es su capital?");
-        System.out.println(guion);
 
-        Scanner lector = new Scanner(System.in);
-        char letraIntro = lector.next().charAt(0);
-        for (int i=0; i<letras.length; i++){
-            if(letras[i]==letraIntro){
-                guion[i]=letraIntro;
-            } 
+        boolean ganar = false;
+
+        while(ganar == false) {
+            System.out.println("Cual es su capital?");
+            System.out.println(guion);
+
+            Scanner lector = new Scanner(System.in);
+            char letraIntro = lector.next().charAt(0);
+            for (int i=0; i<letras.length; i++){
+                if(letras[i]==letraIntro){
+                    guion[i]=letraIntro;
+                } 
+                if (Arrays.equals (letras, guion)){
+                    System.out.println("Esooo!");
+                }
+            }
+            System.out.println(guion);
         }
-        System.out.println(guion);
-
 
 
 
