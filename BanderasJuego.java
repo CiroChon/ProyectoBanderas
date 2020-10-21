@@ -81,7 +81,137 @@ public class BanderasJuego{
 		System.out.println();
 		}
         }
-
+        //Polonia
+        if(capital == "Varsovia")
+		for(int n=61 ; n<81; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+        }
+        }
+        //Indonesia
+        if(capital == "Yakarta"){
+		for(int n=81 ; n<101; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+        }
+        }
+        //Italia
+        if(capital == "Roma"){
+		for(int n=101 ; n<121; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "5":
+						System.out.print(ConsoleColors.GREEN_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+        }
+        }   
+        //Nigeria
+        if(capital == "Abuya"){
+        for(int n=121 ; n<141; n++){
+            String[] archivo = archivox[n].split(";");
+            for(int i = 0; i<archivo.length; i++){
+                switch (archivo[i]) {
+                    case "3":
+                        System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+                        break;
+                    case "5":
+                        System.out.print(ConsoleColors.GREEN_BACKGROUND+"   ");
+                        break;
+                    default:
+                        System.out.print("   ");
+                }
+                System.out.print(ConsoleColors.RESET);
+            }
+        System.out.println();
+        }
+        }
+        //Noruega
+        if(capital == "Oslo"){
+		for(int n=141 ; n<161; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					case "2":
+						System.out.print(ConsoleColors.BLUE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}
+        }
+        //Isla De Pascua
+        if(capital == "HangaRoa"){
+		for(int n=161 ; n<181; n++){
+			String[] archivo = archivox[n].split(";");
+			for(int i = 0; i<archivo.length; i++){
+				switch (archivo[i]) {
+					case "1":
+						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
+						break;
+					case "3":
+						System.out.print(ConsoleColors.WHITE_BACKGROUND+"   ");
+						break;
+					default:
+						System.out.print("   ");
+				}
+				System.out.print(ConsoleColors.RESET);
+			}
+		System.out.println();
+		}  
+        }
+        if(capital == "Varsovia"){
+            
+        }
+        if(capital == "Varsovia")
+        if(capital == "Varsovia")
 
 
 
