@@ -13,8 +13,6 @@ public class Juego {
         for (int i=0; i<letras.length; i++){
             guion[i]= '-';
         }
-
-        int intentos = 3;
         
         System.out.println("Cual es su capital?");
         System.out.println(guion);
@@ -27,9 +25,13 @@ public class Juego {
                 if(letras[i]==letraIntro){
                     guion[i]=letraIntro;
                 } 
+                
                 if (Arrays.equals (letras, guion)){
                     System.out.println("Esooo!");
+                    ganar = true;
+                    if(ganar == true) {
                     break;
+                }
                 }
             }
             System.out.println(guion);
