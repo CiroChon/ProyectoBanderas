@@ -13,18 +13,22 @@ public class Juego {
         for (int i=0; i<letras.length; i++){
             guion[i]= '-';
         }
-        
+
+        System.out.println(capital);
+
         System.out.println("Cual es su capital?");
         System.out.println(guion);
+
         boolean ganar = false;
         while(ganar == false) {
- 
             Scanner lector = new Scanner(System.in);
             char letraIntro = lector.next().charAt(0);
             for (int i=0; i<letras.length; i++){
-                if(letras[i]==letraIntro){
+                   if(letras[i]==letraIntro){
                     guion[i]=letraIntro;
-                } 
+                    System.out.println(guion); 
+                }
+                while (intentos < intentosT)
                 
                 if (Arrays.equals (letras, guion)){
                     System.out.println("Esooo!");
@@ -34,30 +38,31 @@ public class Juego {
                 }
                 }
             }
-            System.out.println(guion);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
