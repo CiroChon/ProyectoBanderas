@@ -82,7 +82,7 @@ public class BanderasJuego{
 		}
         }
         //Polonia
-        if(capital == "Varsovia")
+        if(capital == "Varsovia") {
 		for(int n=61 ; n<81; n++){
 			String[] archivo = archivox[n].split(";");
 			for(int i = 0; i<archivo.length; i++){
@@ -633,15 +633,5 @@ public class BanderasJuego{
 		System.out.println();
         }
         }
-
-
-
-
-
-
-
-
-
-
 	}
 }
