@@ -13,7 +13,17 @@ public class BanderasJuego{
 
         for (int i=0; i<letras.length; i++){
             guion[i]= '-'; //cambiar cada caractere/letra por un guion 
-        }
+		}
+		System.out.println("     #                                                 ");                     
+		System.out.println("    # #    #    #   ####   #####    ####     ##    #####   #  #####   #### "); 
+		System.out.println("   #   #   #    #  #    #  #    #  #    #   #  #   #    #  #    #    #    # ");
+		System.out.println("  #     #  ######  #    #  #    #  #       #    #  #    #  #    #    #    #"); 
+		System.out.println("  #######  #    #  #    #  #####   #       ######  #    #  #    #    #    # ");
+		System.out.println("  #     #  #    #  #    #  #   #   #    #  #    #  #    #  #    #    #    # ");
+		System.out.println("  #     #  #    #   ####   #    #   ####   #    #  #####   #    #     ####  ");
+
+		
+																				
         System.out.println("Cual es su capital?");
         System.out.println(guion);
 		
