@@ -22,7 +22,22 @@ public class BanderasJuego{
 		System.out.println("  #     #  #    #  #    #  #   #   #    #  #    #  #    #  #    #    #    # ");
 		System.out.println("  #     #  #    #   ####   #    #   ####   #    #  #####   #    #     ####  ");
 
+		Scanner op = new Scanner(System.in);
+		boolean empezar = false;
+		int emp;
 
+		while(!empezar){
+			System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>Presiona 1 para empezar<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+			emp = op.nextInt();
+			switch(emp){
+				case 1:
+					System.out.println("Suerte!");
+					empezar = true;
+					break;
+				default:
+					System.out.println("Error");
+			}
+		}
 																				
         System.out.println("Cual es su capital?");
         System.out.println(guion);
