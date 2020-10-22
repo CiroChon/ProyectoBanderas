@@ -643,18 +643,19 @@ public class BanderasJuego{
             char letraIntro = lector.next().charAt(0);
             for (int i=0; i<letras.length; i++){
                 if(letras[i]==letraIntro){
-                    guion[i]=letraIntro;
+					guion[i]=letraIntro;
+					System.out.println(guion);
                 } 
                 
                 if (Arrays.equals (letras, guion)){
-                    System.out.println("Esooo!");
+                    System.out.println("Esooo! Ganaste nada uwu.");
                     ganar = true;
                     if(ganar == true) {
                     break;
                 }
                 }
             }
-            System.out.println(guion);
+
         }
 
 
