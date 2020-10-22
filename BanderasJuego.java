@@ -3,27 +3,26 @@ import java.util.Arrays;
 
 public class BanderasJuego{
 	public static void main(String[] args) {
-		String[] archivox = ConsoleFile.read("info_banderas.csv");
+		String[] archivox = ConsoleFile.read("info_banderas.csv"); //leer el archivo de las banderas
         String [] capitales = {"Londres", "Bogota", "Lima", "Varsovia", "Yakarta", "Roma", "Abuya", "Oslo", "HangaRoa", "Bucarest", "Berlin", "Tokyo", "Mariehamn", "Seul", "Victoria", "Gibraltar", "Damasco", "Praga", "Beirut", "Edimburgo", "LaHabana", "Moscu", "SriJayawardenapuraKotte", "Banjul", "SantiagoDeChile", "Amsterdam", "Pionyang"};        
-        int posAleatoria = (int) Math.floor(Math.random() * capitales.length); 
-        String capital = capitales[posAleatoria];
+        int posAleatoria = (int) Math.floor(Math.random() * capitales.length); //crear una posicion aleatoria de las capitales mencionadas anteriormente
+        String capital = capitales[posAleatoria]; //Darle nombre a la posicion
 
-        char [] letras = capital.toCharArray();
-        char [] guion = new char[letras.length];
+        char [] letras = capital.toCharArray(); //separar la palabra en caracteres independientes
+        char [] guion = new char[letras.length]; //hacer de cada letra/caractere un char
 
         for (int i=0; i<letras.length; i++){
-            guion[i]= '-';
+            guion[i]= '-'; //cambiar cada caractere/letra por un guion 
         }
-        
         System.out.println("Cual es su capital?");
         System.out.println(guion);
 		
         //Gran Bretaña
         if(capital == "Londres") {
-		for(int n=1 ; n<21; n++){
-			String[] archivo = archivox[n].split(";");
+		for(int n=1 ; n<21; n++){ //rango en el que se encuentra la bandera en el documento
+			String[] archivo = archivox[n].split(";"); //quitar los ; del archiv de las banderas
 			for(int i = 0; i<archivo.length; i++){
-				switch (archivo[i]) {
+				switch (archivo[i]) { //para cada color se le hace un caso 
 					case "1":
 						System.out.print(ConsoleColors.RED_BACKGROUND+"   ");
 						break;
@@ -616,7 +615,7 @@ public class BanderasJuego{
         //Corea del Norte
         if(capital == "Pioyang"){
 		for(int n=521 ; n<541; n++){
-			String[] archivo = archivox[n].split(";");
+			String[] archivo = archivox[n].split(";"); 
 			for(int i = 0; i<archivo.length; i++){
 				switch (archivo[i]) {
 					case "1":
